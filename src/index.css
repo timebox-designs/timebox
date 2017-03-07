@@ -1,96 +1,49 @@
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+.container {
+    position: relative;
 }
 
-#root {
-    flex: 1;
+.splash-container {
     background-image: url(730073.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.container {
-    position: relative;
-}
-
 .splash {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
+    justify-content: space-between;
+    min-height: 70vh;
 }
 
-.splash h1 {
+.hero {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.hero h1 {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 80px;
     color: #fff;
 }
 
-.splash p {
+.hero p {
     font-family: 'Droid Serif', serif;
     font-size: 24px;
     font-style: italic;
     color: #c5c5c5;
 }
 
-.splash .hero {
-    margin-top: -14em;
-}
-
 .ship {
-    position: absolute;
-    right: 0;
-    bottom: 10%;
+    align-self: flex-end;
+    margin-right: 5em;
+    margin-bottom: 2em;
     width: 130px;
     height: 200px;
     background-image: url(ship.png);
-
-    -webkit-animation: play 1.8s steps(8) infinite;
-    -moz-animation: play 1.8s steps(8) infinite;
-    -ms-animation: play 1.8s steps(8) infinite;
-    -o-animation: play 1.8s steps(8) infinite;
     animation: play 1.8s steps(8) infinite;
     transform: rotate(-15deg)
-}
-
-@-webkit-keyframes play {
-    from {
-        background-position: 0;
-    }
-    to {
-        background-position: -1040px;
-    }
-}
-
-@-moz-keyframes play {
-    from {
-        background-position: 0;
-    }
-    to {
-        background-position: -1040px;
-    }
-}
-
-@-ms-keyframes play {
-    from {
-        background-position: 0;
-    }
-    to {
-        background-position: -1040px;
-    }
-}
-
-@-o-keyframes play {
-    from {
-        background-position: 0;
-    }
-    to {
-        background-position: -1040px;
-    }
 }
 
 @keyframes play {
